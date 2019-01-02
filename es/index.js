@@ -60,11 +60,11 @@ var Extractor = function () {
 
 var forms = {};
 
-var RailsForm = function (_React$Component) {
-    _inherits(RailsForm, _React$Component);
+var FormExtractor = function (_React$Component) {
+    _inherits(FormExtractor, _React$Component);
 
-    function RailsForm(props) {
-        _classCallCheck(this, RailsForm);
+    function FormExtractor(props) {
+        _classCallCheck(this, FormExtractor);
 
         var _this2 = _possibleConstructorReturn(this, _React$Component.call(this, props));
 
@@ -74,7 +74,7 @@ var RailsForm = function (_React$Component) {
         return _this2;
     }
 
-    RailsForm.prototype.render = function render() {
+    FormExtractor.prototype.render = function render() {
         return React.createElement(
             'form',
             this.form.formProps,
@@ -86,11 +86,11 @@ var RailsForm = function (_React$Component) {
         );
     };
 
-    return RailsForm;
+    return FormExtractor;
 }(React.Component);
 
-RailsForm.propTypes = process.env.NODE_ENV !== "production" ? {
+FormExtractor.propTypes = process.env.NODE_ENV !== "production" ? {
     handle: PropTypes.string.isRequired
 } : {};
 
-export default RailsForm;
+export default FormExtractor;

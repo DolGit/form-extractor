@@ -37,7 +37,7 @@ class Extractor {
 
 const forms = {}
 
-class RailsForm extends React.Component {
+class FormExtractor extends React.Component {
     constructor(props) {
         super(props)
         const form = forms[props.handle]
@@ -60,8 +60,8 @@ class RailsForm extends React.Component {
     }
 }
 
-RailsForm.propTypes = {
+FormExtractor.propTypes = {
     handle: PropTypes.string.isRequired,
 };
 
-export default RailsForm
+export default FormExtractor
