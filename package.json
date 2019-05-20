@@ -1,6 +1,6 @@
 {
   "name": "@dolnpm/form-extractor",
-  "version": "0.1.2-development",
+  "version": "0.1.3-development",
   "description": "Reads a statically created form, for example from backend templates on Rails, and copies the attributes into React. Primarily built for copying forms created by Devise (Rails gem), including the rails authenticity token, then magically converting them into React.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -20,7 +20,7 @@
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
-  "dependencies": {
+  "peerDependencies": {
     "prop-types": "*",
     "react": "*"
   },
