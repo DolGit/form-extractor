@@ -46,7 +46,7 @@ class FormExtractor extends React.Component {
     }
     render() {
         return (
-            <form {...this.form.formProps}>
+            <form {...this.form.formProps} {...this.props}>
                 {this.form.childInputs.map((input, index) => {
                     let Tag = input.tag;
                     return (

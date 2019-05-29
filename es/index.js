@@ -77,7 +77,7 @@ var FormExtractor = function (_React$Component) {
     FormExtractor.prototype.render = function render() {
         return React.createElement(
             'form',
-            this.form.formProps,
+            _extends({}, this.form.formProps, this.props),
             this.form.childInputs.map(function (input, index) {
                 var Tag = input.tag;
                 return React.createElement(Tag, _extends({ key: index }, input.props));
